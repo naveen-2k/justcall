@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:repeatMode="reverse">
+    <scale
+        android:fromXScale="0dp"
+        android:fromYScale="0dp"
+        android:toYScale="10dp"
+        android:toXScale="30dp" />
+
+</set>

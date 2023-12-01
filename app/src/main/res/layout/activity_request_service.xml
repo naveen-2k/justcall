@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradienttheme"
+    tools:context=".RequestService">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Data"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="40dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/d1"
+            style="@style/datapage"
+            android:background="@drawable/circle1"
+            android:hint="your name" />
+        <EditText
+            android:id="@+id/d2"
+            style="@style/datapage"
+            android:background="@drawable/circle1"
+            android:hint="phone no" />
+        <EditText
+            android:id="@+id/d3"
+            android:background="@drawable/circle1"
+            style="@style/datapage"
+            android:hint="location" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/d4"
+            style="@style/datapage"
+            android:layout_width="250dp"
+            android:background="@drawable/circle1"
+            android:hint="date"
+            android:inputType="date"
+            android:onClick="setdatevisible"/>
+        <EditText
+            android:id="@+id/d5"
+            style="@style/datapage"
+            android:layout_width="250dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/circle1"
+            android:hint="time"
+            android:inputType="time"
+            android:onClick="settimevisible"/>
+
+
+
+
+        </RelativeLayout>
+       <Button
+           android:id="@+id/bookbtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="Submit"
+           android:background="@drawable/gradienttheme"
+           android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

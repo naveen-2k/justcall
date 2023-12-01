@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergentProvider"
+    android:id="@+id/servicefrag">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/tut" />
+
+            <ImageButton
+                android:id="@+id/backfrag"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle1"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <ImageButton
+                android:id="@+id/like1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="340dp"
+                android:background="@drawable/circle1"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/like2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="340dp"
+                android:background="@drawable/circle1"
+                android:src="@drawable/ic_baseline_favorite_24"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradienttheme"
+        app:cardElevation="30dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="190dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SS Tutorial"
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold" />
+            <ImageButton
+                android:id="@+id/call"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                android:background="@drawable/circle"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="5dp"/>
+            <Button
+                android:id="@+id/requestService"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Submit request"
+                android:textColor="@color/black"
+                android:layout_marginTop="470dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/gradienttheme"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="70dp"
+                android:text="Study learn improve" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:id="@+id/locbutton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_baseline_location_on_24" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="140dp">
+                <EditText
+                    android:id="@+id/dt1"
+                    style="@style/datapage"
+                    android:background="@drawable/circle1"
+                    android:hint="name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"/>
+                <EditText
+                    android:id="@+id/dt2"
+                    style="@style/datapage"
+                    android:background="@drawable/circle1"
+                    android:hint="contact"
+                    android:textColorHint="@color/black"/>
+                <EditText
+                    android:id="@+id/dt3"
+                    style="@style/datapage"
+                    android:background="@drawable/circle1"
+                    android:hint="location"
+                    android:textColorHint="@color/black"/>
+                <EditText
+                    android:id="@+id/dt4"
+                    style="@style/datapage"
+                    android:inputType="date"
+                    android:background="@drawable/circle1"
+                    android:hint="date"
+                    android:textColorHint="@color/black"/>
+                <EditText
+                    android:id="@+id/d15"
+                    style="@style/datapage"
+                    android:inputType="time"
+                    android:background="@drawable/circle1"
+                    android:hint="time"
+                    android:textColorHint="@color/black"/>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
